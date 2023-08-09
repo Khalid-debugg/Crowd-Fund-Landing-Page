@@ -1,0 +1,43 @@
+.mobile{
+    right: -100%;
+    transition: right 0.75s ease-in-out;
+}
+.mobile-open{
+    right:0;
+}
+.icon{
+    transition: transform 0.5s ease-in-out;
+}
+.icon-closed{
+    transform: rotateZ(180deg);
+}
+header{
+    margin-left: 9vw;
+}
+nav ul{
+    margin-right: 9vw;
+}
+.background-image {
+    background-image: url('../../assests/images/image-hero-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    z-index: -1;
+}
+@media screen and (min-width: 425px) {
+    .background-image{
+        background-image: url('../../assests/images/image-hero-desktop.jpg');
+        background-size: auto;
+        height: 100vw;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .background-image{
+        background-size: contain;
+    }
+}
